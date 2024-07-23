@@ -1,0 +1,47 @@
+/* SignInPage.css */
+.primary-button {
+  background-color: #007bff; /* Primary color */
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.primary-button:hover {
+  background-color: #0056b3; /* Darker shade for hover effect */
+  transform: translateY(-2px);
+}
+
+.primary-button:disabled {
+  background-color: #6c757d; /* Disabled button color */
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.oauth-button {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 6px;
+  background-color: #f4f4f4; /* Light background for OAuth button */
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.oauth-button:hover {
+  background-color: #e2e2e2; /* Slightly darker background for hover effect */
+  transform: translateY(-2px);
+}

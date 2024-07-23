@@ -2,6 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    background-color: rgb(241, 245, 241);
-}
+body {
+    background: linear-gradient(white 0%, rgb(173, 216, 230) 100%);
+    background-attachment: fixed;
+    background-size: 100% 200%;
+    background-position: top;
+    transition: background-position 0.2s ease-out;
+  }
+  
+  body::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+  }
+  
+  body::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  html {
+    height: 200%;
+  }
+  

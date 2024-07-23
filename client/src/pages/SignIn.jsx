@@ -7,6 +7,7 @@ import {
   signInFailure,
 } from '../redux/user/userSlice';
 import OAuth from '../components/OAuth';
+import './SignInPage.css';
 
 export default function SignIn() {
   const [formData, setFormData] = useState({});
@@ -62,10 +63,10 @@ export default function SignIn() {
         />
 
         <button
-          disabled={loading}
-          className='bg-slate-700 text-white p-3 rounded-lg uppercase hover:opacity-95 disabled:opacity-80'
+        disabled={loading}
+        className='primary-button'
         >
-          {loading ? 'Loading...' : 'Sign In'}
+          {loading ? 'Loading...' : 'Sign Up'}
         </button>
         <OAuth/>
       </form>
