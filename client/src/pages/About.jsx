@@ -47,12 +47,21 @@ export default function About() {
             onMouseEnter={() => setHoveredProfile(1)}
             onMouseLeave={() => setHoveredProfile(null)}
           >
-            <img src={teamMemberImage} alt='Team Member' className='w-32 h-32 rounded-full mx-auto mb-4 shadow-md transition-transform transform' />
-            <h3 className='text-lg font-semibold text-gray-900 mb-1'>Swapna Dip Mandal</h3>
-            <p className='text-gray-600'>Developer</p>
+            <a
+              href='https://your-portfolio-link.com' // Replace with your actual portfolio URL
+              target='_blank'
+              rel='noopener noreferrer'
+              className={`relative text-center transition-transform transform ${hoveredProfile === 1 ? 'scale-105 z-10' : 'scale-100'} ${hoveredProfile && hoveredProfile !== 1 ? 'blur-sm' : ''}`}
+              onMouseEnter={() => setHoveredProfile(1)}
+              onMouseLeave={() => setHoveredProfile(null)}
+            >
+              <img src={teamMemberImage} alt='Team Member' className='w-32 h-32 rounded-full mx-auto mb-4 shadow-md transition-transform transform' />
+              <h3 className='text-lg font-semibold text-gray-900 mb-1'>Swapna Dip Mandal</h3>
+              <p className='text-gray-600'>Developer</p>
+            </a>
           </div>
           {/* Team Member */}
-          <div
+          {/* <div
             className={`relative text-center transition-transform transform ${hoveredProfile === 2 ? 'scale-105 z-10' : 'scale-100'} ${hoveredProfile && hoveredProfile !== 2 ? 'blur-sm' : ''}`}
             onMouseEnter={() => setHoveredProfile(2)}
             onMouseLeave={() => setHoveredProfile(null)}
@@ -60,9 +69,9 @@ export default function About() {
             <img src='https://www.janesmitheditor.com/uploads/3/1/8/3/31835563/published/06-janesmith-2019_1.jpg?1626576973' alt='Team Member' className='w-32 h-32 rounded-full mx-auto mb-4 shadow-md transition-transform transform' />
             <h3 className='text-lg font-semibold text-gray-900 mb-1'>Jane Smith</h3>
             <p className='text-gray-600'>Senior Agent</p>
-          </div>
+          </div> */}
           {/* Team Member */}
-          <div
+          {/* <div
             className={`relative text-center transition-transform transform ${hoveredProfile === 3 ? 'scale-105 z-10' : 'scale-100'} ${hoveredProfile && hoveredProfile !== 3 ? 'blur-sm' : ''}`}
             onMouseEnter={() => setHoveredProfile(3)}
             onMouseLeave={() => setHoveredProfile(null)}
@@ -70,7 +79,7 @@ export default function About() {
             <img src='https://d2gjqh9j26unp0.cloudfront.net/profilepic/a21935363f6d5670bf8aba32bb01d4cb' alt='Team Member' className='w-32 h-32 rounded-full mx-auto mb-4 shadow-md transition-transform transform' />
             <h3 className='text-lg font-semibold text-gray-900 mb-1'>Mike Johnson</h3>
             <p className='text-gray-600'>Marketing Specialist</p>
-          </div>
+          </div> */}
         </div>
       </section>
 
