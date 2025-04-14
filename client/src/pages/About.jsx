@@ -40,8 +40,7 @@ export default function About() {
           <h2 className='text-3xl font-semibold text-gray-900 mb-4'>Meet the Team</h2>
           <p className='text-base md:text-lg text-gray-600'>Our experienced team is here to make your real estate journey smooth and successful.</p>
         </div>
-        <div className='relative grid place-items-center'>
-        <div className='relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10'>
+        <div className='relative flex flex-wrap justify-center gap-10'>
           {/* Team Member */}
           <div
             className={`relative text-center transition-transform transform ${hoveredProfile === 1 ? 'scale-105 z-10' : 'scale-100'} ${hoveredProfile && hoveredProfile !== 1 ? 'blur-sm' : ''}`}
@@ -81,7 +80,6 @@ export default function About() {
             <h3 className='text-lg font-semibold text-gray-900 mb-1'>Mike Johnson</h3>
             <p className='text-gray-600'>Marketing Specialist</p>
           </div> */}
-        </div>
         </div>
       </section>
 
