@@ -2,7 +2,7 @@ import { GoogleAuthProvider, getAuth, signInWithPopup } from 'firebase/auth';
 import { app } from '../firebase';
 import { useDispatch } from 'react-redux';
 import { signInSuccess } from '../redux/user/userSlice';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';// Import your CSS file for styling
 
 export default function OAuth() {
   const dispatch = useDispatch();
@@ -33,12 +33,15 @@ export default function OAuth() {
     }
   };
   return (
-    <button
-      onClick={handleGoogleClick}
-      type='button'
-      className='bg-red-700 text-white p-3 rounded-lg uppercase hover:opacity-95'
-    >
-      Continue with google
-    </button>
+    <button onClick={handleGoogleClick}
+    type='button' className='oauth-button self-center'>
+    <span className='oauth-text'>Continue with Google</span>
+  <span className='oauth-shape oauth-shape-1'></span>
+  <span className='oauth-shape oauth-shape-2'></span>
+  <span className='oauth-shape oauth-shape-3'></span>
+  <span className='oauth-shape oauth-shape-4'></span>
+  <span className='oauth-shadow'></span>
+  </button>
+
   );
 }

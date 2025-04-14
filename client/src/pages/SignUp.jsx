@@ -67,9 +67,14 @@ export default function SignUp() {
 
         <button
         disabled={loading}
-        className='primary-button'
+        className='primary-button self-center'
         >
-          {loading ? 'Loading...' : 'Sign Up'}
+          <span className="button__text">{loading ? 'Loading...' : 'Sign Up'}</span>
+          <span className="button__shape button__shape-1"></span>
+          <span className="button__shape button__shape-2"></span>
+          <span className="button__shape button__shape-3"></span>
+          <span className="button__shape button__shape-4"></span>
+          <span className="button__shadow"></span>
         </button>
         <OAuth className='primary-button' />
       </form>

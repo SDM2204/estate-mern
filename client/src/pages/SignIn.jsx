@@ -62,11 +62,13 @@ export default function SignIn() {
           onChange={handleChange}
         />
 
-        <button
-        disabled={loading}
-        className='primary-button'
-        >
-          {loading ? 'Loading...' : 'Sign Up'}
+        <button disabled={loading} className='primary-button self-center'>
+          <span className="button__text">{loading ? 'Loading...' : 'Sign In'}</span>
+          <span className="button__shape button__shape-1"></span>
+          <span className="button__shape button__shape-2"></span>
+          <span className="button__shape button__shape-3"></span>
+          <span className="button__shape button__shape-4"></span>
+          <span className="button__shadow"></span>
         </button>
         <OAuth/>
       </form>
